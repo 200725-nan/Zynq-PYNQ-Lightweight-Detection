@@ -1,0 +1,23 @@
+
+root@zynq:~# stty -echo
+root@zynq:~# 
+__AX7021_C1_ASSETS_1793439994_BEGIN__
+root@zynq:~# ===UIO_MAP===
+uio
+0x43c00000
+0x00010000
+../../../bus/platform/drivers/uio_pdrv_genirq
+root@zynq:~# ===CONFIG_DEVICE===
+ls: cannot access /dev/fpga*: No such file or directory
+crw------- 1 root root 246, 0 Jan  2 09:10 /dev/xdevcfg
+root@zynq:~# ===TRANSFER_TOOLS===
+/usr/bin/python3
+/usr/bin/base64
+root@zynq:~# ===C1_ASSETS===
+root@zynq:~# ===DISK===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       2.4G  1.2G  1.1G  54% /
+/dev/root       2.4G  1.2G  1.1G  54% /
+root@zynq:~# 
+__AX7021_C1_ASSETS_1793439994_END__
+root@zynq:~# root@zynq:~# 

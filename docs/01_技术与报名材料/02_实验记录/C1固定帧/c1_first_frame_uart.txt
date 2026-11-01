@@ -1,0 +1,16 @@
+stty -echo
+root@zynq:~#   File "<string>", line 1
+    p="/tmp/c1_delta/software/ax7021_vdma_python.py";s=open(p).read();old="if name != \\"c1-s2mm-irq\\":";new="if name not in (\\"c1-s2mm-irq\\", \\"uio\\"):";assert old in s,"expected strict UIO guard not found";open(p,"w").write(s.replace(old,new,1));print("UIO_GENERIC_NAME_PATCHED")
+                                                                                          ^
+SyntaxError: invalid syntax
+__C1_RUNNER_RC=
+cat: /tmp/c1_result.jsonl: No such file or directory
+ls: cannot access /tmp/c1_result.jsonl: No such file or directory
+/tmp/c1_capture:
+total 0
+9a472e6dbbb6d7c51ca0e4bdef578a85195a7660967d351dda569bb2250e02af  /tmp/c1_delta/input_rgb640x480/000000005001.rgb
+32a909f74381cd06e989bf8ec9241b1c85479d7ec9d3ba17f8588bfbbc7e4778  /tmp/c1_delta/golden_q06_rgb300/000000005001.rgb
+sha256sum: /tmp/c1_capture/000000005001.rgb: No such file or directory
+__GOLDEN_CMP_RC=2__
+__C1_FRAME_END_20261031_01__
+root@zynq:~# 

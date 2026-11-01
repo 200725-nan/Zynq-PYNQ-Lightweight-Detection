@@ -1,0 +1,7 @@
+{
+  "captured_utc": "2026-10-31T14:47:22.701429+00:00",
+  "uart_bytes": 3741,
+  "uart_sha256": "29d75bf7e3b971bddc6df647e324deb3c0034eedc59002c510fe95edda22e428",
+  "completion_marker_seen": true,
+  "purpose": "Pinpoint the stage of C1 runner segmentation fault without adding frames"
+}

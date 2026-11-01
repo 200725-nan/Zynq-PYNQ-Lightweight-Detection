@@ -1,0 +1,11 @@
+root@zynq:/tmp/c1_delta/software# root@zynq:/tmp/c1_delta/software# root@zynq:/tmp/c1_delta/software# root@zynq:/tmp/c1_delta/software# Segmentation fault
+root@zynq:/tmp/c1_delta/software# __C1_DIAG_RC=139
+101
+102
+103
+104
+105
+106
+__JSON__
+__C1_DIAG_REPEAT_END_09__
+root@zynq:/tmp/c1_delta/software# 

@@ -1,0 +1,7 @@
+root@zynq:/tmp/c1_delta/software# __C1_CRASH_DIAG__
+__CORES__
+ls: cannot access /tmp/core*: No such file or directory
+ls: cannot access /root/core*: No such file or directory
+__TOOLS__
+__DIAG_END__
+root@zynq:/tmp/c1_delta/software# 

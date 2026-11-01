@@ -1,0 +1,68 @@
+stty -echo
+root@zynq:~# __BOARD_RECOVERY__
+Linux zynq 4.9.0-xilinx #1 SMP PREEMPT Fri Dec 20 09:27:27 CST 2019 armv7l GNU/Linux
+ 09:38:56 up 0 min,  1 user,  load average: 0.22, 0.08, 0.03
+__DDR__
+__TMP__
+ls: cannot access /tmp/c1_delta: No such file or directory
+ls: cannot access /tmp/c1_ort: No such file or directory
+ls: cannot access /tmp/c1_result.jsonl: No such file or directory
+ls: cannot access /dev/shm/ax7021_compat: No such file or directory
+__BOOTTAIL__
+[    1.185230] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.190527] NET: Registered protocol family 17
+[    1.193615] can: controller area network core (rev 20120528 abi 9)
+[    1.198486] NET: Registered protocol family 29
+[    1.201564] can: raw protocol (rev 20120528)
+[    1.204541] can: broadcast manager protocol (rev 20161123 t)
+[    1.208860] can: netlink gateway (rev 20130117) max_hops=1
+[    1.213334] Registering SWP/SWPB emulation handler
+[    1.236226] mmc1: new high speed MMC card at address 0001
+[    1.242249] mmcblk1: mmc1:0001 Q2J55L 7.09 GiB 
+[    1.252232] mmcblk1boot0: mmc1:0001 Q2J55L partition 1 16.0 MiB
+[    1.262167] mmcblk1boot1: mmc1:0001 Q2J55L partition 2 16.0 MiB
+[    1.272077] mmcblk1rpmb: mmc1:0001 Q2J55L partition 3 4.00 MiB
+[    1.289954] OF: graph: no port node found in /amba_pl/xilinx_drm
+[    1.294593] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    1.299863] [drm] No driver support for vblank timestamp query.
+[    1.312080] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[    1.330293] EDID block is all zeroes
+[    1.332500] xilinx-drm amba_pl:xilinx_drm: HDMI-A-1: EDID invalid.
+[    1.338078] xilinx-drm amba_pl:xilinx_drm: No connectors reported connected with modes
+[    1.344631] [drm] Cannot find any crtc or sizes - going 1024x768
+[    1.387163] Console: switching to colour frame buffer device 128x48
+[    1.417330] xilinx-drm amba_pl:xilinx_drm: fb0:  frame buffer device
+[    1.422388] [drm] Initialized xilinx_drm 1.0.0 20130509 on minor 0
+[    1.427413] hctosys: unable to open rtc device (rtc0)
+[    1.431070] of_cfs_init
+[    1.432284] of_cfs_init: OK
+[    1.433938] ALSA device list:
+[    1.435513]   No soundcards found.
+[    1.438608] EXT4-fs (mmcblk0p2): couldn't mount as ext3 due to feature incompatibilities
+[    1.482896] random: fast init done
+[    1.503242] hub 1-1:1.0: USB hub found
+[    1.505719] hub 1-1:1.0: 4 ports detected
+[    1.766264] EXT4-fs (mmcblk0p2): recovery complete
+[    1.771165] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    1.777925] VFS: Mounted root (ext4 filesystem) on device 179:2.
+[    1.782647] devtmpfs: mounted
+[    1.786965] Freeing unused kernel memory: 1024K (c0900000 - c0a00000)
+[    1.999674] systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+[    2.011819] systemd[1]: Detected architecture 'arm'.
+[    2.061279] systemd[1]: Failed to insert module 'autofs4'
+[    2.066606] systemd[1]: Set hostname to <zynq>.
+[    2.374917] systemd[1]: Cannot add dependency job for unit display-manager.service, ignoring: Unit display-manager.service failed to load: No such file or directory.
+[    2.390730] systemd[1]: Expecting device dev-ttyPS0.device...
+[    2.422184] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[    2.428674] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    2.434944] systemd[1]: Starting Remote File Systems (Pre).
+[    2.462139] systemd[1]: Reached target Remote File Systems (Pre).
+[    3.439579] systemd-udevd[1361]: starting version 215
+[    4.158742] EXT4-fs (mmcblk0p2): re-mounted. Opts: errors=remount-ro
+[    4.769323] systemd-journald[1375]: Received request to flush runtime journal from PID 1
+[    6.426176] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    7.370536] net eth1: Promiscuous mode disabled.
+[    7.480752] net eth1: Promiscuous mode disabled.
+[    8.512281] xilinx_axienet 41000000.ethernet eth1: Link is Down
+__RECOVERY_DONE__
+root@zynq:~# 

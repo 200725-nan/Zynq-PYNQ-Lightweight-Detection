@@ -1,0 +1,10 @@
+{
+  "scope": "Extracted C1 delta and existing ARM ONNX Runtime archive to candidate rootfs /tmp",
+  "captured_utc": "2026-10-31T10:25:15.085183+00:00",
+  "fpga_configuration_performed": false,
+  "dma_performed": false,
+  "sd_or_flash_boot_file_written": false,
+  "raw_rx_bytes": 5072,
+  "raw_rx_sha256": "21fe08ea82f1672d2e02d0a1e477f37f835caf1f830037565826150a1a2e8444",
+  "capture": "F:\\FPGA\\offline_research\\experiments\\data\\v1031\\c1_programmed_candidate_20261031_v1\\runtime_extract.txt"
+}

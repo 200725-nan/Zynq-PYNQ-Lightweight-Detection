@@ -1,0 +1,30 @@
+# 压缩包
+*.zip
+*.tar
+*.tgz
+
+# 模型文件
+*.onnx
+
+# 视频文件
+*.mp4
+*.mov
+
+# Vivado 工程缓存文件
+*.runs
+*.cache
+*.jou
+*.log
+*.xpr
+*.pb
+*.bif
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 系统文件
+.DS_Store
+Thumbs.db

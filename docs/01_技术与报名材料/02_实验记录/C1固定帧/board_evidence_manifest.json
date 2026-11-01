@@ -1,0 +1,69 @@
+{
+  "captured_utc": "2026-10-31T14:57:03.333095+00:00",
+  "board_run_id": "C1_first_frame_no_uio_20261031",
+  "frame_id": "000000005001.rgb",
+  "pipeline_mode": "C1_fixed_source_stop_at_IOC",
+  "completed": 1,
+  "errors": 0,
+  "board_reported_dma_ns": 4014047,
+  "board_reported_ort_cpu_seconds": 4.962701320000008,
+  "board_reported_ort_wall_ns": 2504702497,
+  "board_reported_detection_count": 16,
+  "board_reported_input_sha256": "9a472e6dbbb6d7c51ca0e4bdef578a85195a7660967d351dda569bb2250e02af",
+  "board_reported_output_sha256": "32a909f74381cd06e989bf8ec9241b1c85479d7ec9d3ba17f8588bfbbc7e4778",
+  "compare_to_host_q06_golden": {
+    "golden_path": "F:\\FPGA\\offline_research\\experiments\\data\\v1031\\system_28_fourway_quality_v3_20261031\\rgb300\\C1_Q06_RGB888\\000000005001.rgb",
+    "golden_sha256": "32a909f74381cd06e989bf8ec9241b1c85479d7ec9d3ba17f8588bfbbc7e4778",
+    "captured_sha256": "32a909f74381cd06e989bf8ec9241b1c85479d7ec9d3ba17f8588bfbbc7e4778",
+    "bytes_equal": true,
+    "length_equal": true
+  },
+  "runtime_version": "ONNX Runtime 1.14.1 ARM32 via isolated glibc 2.31 loader",
+  "wait_mode": "direct VDMA MMIO status polling (no UIO IRQ wait)",
+  "source_archive_sha256": "66f88f63b928c5afaab11cd2bc16124826a35897b10bc80050906d1d45631095",
+  "evidence_files": {
+    "c1_result_no_uio.jsonl": {
+      "bytes": 3719,
+      "sha256": "4625d67115c0291c8fa9ddf72b63a78ebbe46fcc00352fafd079e64d23990173"
+    },
+    "c1_runner_no_uio.log": {
+      "bytes": 117,
+      "sha256": "f2da4c808c9aca8b8d694c6b9155498ae60d8442fcf721efb71c9993416e0618"
+    },
+    "output_000000005001.rgb": {
+      "bytes": 270000,
+      "sha256": "32a909f74381cd06e989bf8ec9241b1c85479d7ec9d3ba17f8588bfbbc7e4778"
+    }
+  },
+  "board_reported_end_to_end_start_marker": "capture_or_file_ready_ns",
+  "board_reported_end_to_end_start_ns": 584685215933,
+  "board_reported_end_to_end_end_marker": "result_done_ns",
+  "board_reported_end_to_end_end_ns": 587263327487,
+  "board_reported_end_to_end_ns": 2578111554,
+  "board_reported_end_to_end_seconds": 2.578111554,
+  "end_to_end_definition": "same-run monotonic interval from frozen input/file-ready marker to detector result_done marker; includes measured pipeline and software overhead for this fixed-file run, not camera exposure/continuous capture",
+  "timing_detail_ns": {
+    "input_file_read_ns": 3703354,
+    "ps_input_stage_ns": 9866528,
+    "dma_runner_marker_interval_ns": 4159023,
+    "tensor_wrap_or_copy_ns": 92856,
+    "ort_wall_ns": 2504702497,
+    "postprocess_ns": 26168111,
+    "input_ready_to_result_done_ns": 2578111554
+  },
+  "dma_timing_note": "board_reported_dma_ns comes from c_helper_dma_elapsed_ns; dma_runner_marker_interval_ns is the separate monotonic interval from dma_start_ns to dma_done_ns and includes surrounding runner overhead.",
+  "board_reported_detector_output_sha256": "45a3c46fef940053cd7ec2b812987e909ddc32e4cd9fc40a2fc6070b09a0db9b",
+  "cache_mapping_evidence": {
+    "kernel_config_path": "experiments/data/v1031/live_fit_audit_v2_images_20261031/kernel.config",
+    "kernel_config_sha256": "8e829293bb5d5a548c0859dc7f7ef7df9b55dd9d06c6a4b33a29504a207e536a",
+    "config_arm_dma_mem_bufferable": true,
+    "runner_opens_devmem": "O_RDWR | O_SYNC",
+    "runner_source_sha256": "b0ff575835f9f563d48a37478cef4e3267f4eb89b58390d5814ced1d9d808515",
+    "source_stage_runner_sha256": "f27cd07f11e75dede5ffc618d7b8275dccec6b94a7ed22a3652c99ba888d4037",
+    "jsonl_cache_sync_start_ns": null,
+    "jsonl_cache_sync_end_ns": null,
+    "source_based_inference": "Linux ARM v4.9 phys_mem_access_prot with CONFIG_ARM_DMA_MEM_BUFFERABLE maps invalid PFNs noncached and valid PFNs opened O_SYNC writecombine/bufferable; neither is ordinary write-back cached mapping.",
+    "classification": "strong source-based inference only; Xilinx kernel exact local source and live PTE were not directly matched/read back",
+    "evidence_note": "docs/ax7021_c1_cache_mapping_source_inference_2026-10-31.md"
+  }
+}

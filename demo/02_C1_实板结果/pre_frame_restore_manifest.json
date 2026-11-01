@@ -1,0 +1,35 @@
+{
+  "status": "restored",
+  "purpose": "Restore C1 BIT and candidate FDT after user power cycle using volatile DDR only.",
+  "captured_utc": "2026-10-31T14:44:01.420560+00:00",
+  "stages": [
+    "stopped at live U-Boot prompt",
+    "staged existing FIT from SD to volatile DDR; no SD writes",
+    "staged C1 BIT to reviewed volatile DDR interval",
+    "configured the hash-verified C1 BIT through exact fpga loadb command",
+    "staged candidate FDT to volatile DDR",
+    "booted RAM-only C1 candidate Linux",
+    "captured candidate DTB, no-map pool, UIO and IRQ state"
+  ],
+  "bit_stage": {
+    "address": 272629760,
+    "baudrate": 115200,
+    "bytes_sent": 4045771,
+    "reported_bytes": 4045771,
+    "sha256": "bd2ee7e280f7c09723e75cf9b1492e3e19c7b73a3df37b35b34f20e1b8ea46d8"
+  },
+  "dtb_stage": {
+    "address": 285212672,
+    "baudrate": 115200,
+    "bytes_sent": 15095,
+    "reported_bytes": 15095,
+    "sha256": "267a80a10a697c47536e2883bf860cb11cc1688bcc74eabaf5c05ba7d8dc1809"
+  },
+  "bit_sha256": "bd2ee7e280f7c09723e75cf9b1492e3e19c7b73a3df37b35b34f20e1b8ea46d8",
+  "dtb_sha256": "267a80a10a697c47536e2883bf860cb11cc1688bcc74eabaf5c05ba7d8dc1809",
+  "boot_command": "bootm 0x10000000#conf@2 - 0x11000000",
+  "sd_or_flash_boot_file_written": false,
+  "dma_performed": false,
+  "raw_rx_bytes": 26020,
+  "raw_rx_sha256": "f76dc504e20da7b080549d9a3fc861fce6451c506f8020213b00068093715fb0"
+}

@@ -1,0 +1,9 @@
+{
+  "captured_utc": "2026-10-31T14:46:00.708543+00:00",
+  "port": "COM6",
+  "baud": 115200,
+  "uart_bytes": 4802,
+  "uart_sha256": "25a63fd97ba711f1c7a7ab5c35ede2db8075927c69a1ff15cc1d45eb229fb935",
+  "completion_marker_seen": true,
+  "scope": "C1 runtime preparation plus one fixed-frame VDMA/Float32 run and golden comparison"
+}

@@ -1,0 +1,9 @@
+{
+  "captured_utc": "2026-10-31T10:28:07.373628+00:00",
+  "port": "COM6",
+  "baud": 115200,
+  "uart_bytes": 999,
+  "uart_sha256": "22aa6bb215143f4031714ab1314daef712279bcdb76c5db3cd6761ba3f3c6921",
+  "completion_marker_seen": true,
+  "scope": "UIO metadata-name compatibility patch and one C1 fixed-frame invocation"
+}

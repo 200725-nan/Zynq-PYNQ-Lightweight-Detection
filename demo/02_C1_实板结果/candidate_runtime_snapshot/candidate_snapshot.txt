@@ -1,0 +1,116 @@
+===KERNEL===
+Linux zynq 4.9.0-xilinx #1 SMP PREEMPT Fri Dec 20 09:27:27 CST 2019 armv7l GNU/Linux
+root@zynq:~# echo ===CMDLINE===; cat /proc/cmdline
+===CMDLINE===
+console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait uio_pdrv_genirq.of_id=generic-uio
+root@zynq:~# echo ===IOMEM===; cat /proc/iomem
+===IOMEM===
+00000000-11ffffff : System RAM
+  00008000-008fffff : Kernel code
+  00a00000-00a70dd3 : Kernel data
+13000000-3fffffff : System RAM
+e0001000-e0001fff : xuartps
+e0002000-e0002fff : /amba/usb@e0002000
+  e0002000-e0002fff : /amba/usb@e0002000
+e0004000-e0004fff : /amba/i2c@e0004000
+e0005000-e0005fff : /amba/i2c@e0005000
+e000a000-e000afff : /amba/gpio@e000a000
+e000b000-e000bfff : /amba/ethernet@e000b000
+e000d000-e000dfff : /amba/spi@e000d000
+e0100000-e0100fff : /amba/sdhci@e0100000
+e0101000-e0101fff : /amba/sdhci@e0101000
+f8003000-f8003fff : /amba/dmac@f8003000
+  f8003000-f8003fff : /amba/dmac@f8003000
+f8005000-f8005fff : /amba/watchdog@f8005000
+f8007000-f80070ff : /amba/devcfg@f8007000
+f8007100-f800711f : /amba/adc@f8007100
+f800c000-f800cfff : /amba/ocmc@f800c000
+fffc0000-ffffffff : f800c000.ocmc
+root@zynq:~# echo ===UIO===; ls -l /dev/uio* /sys/class/uio/uio*/name /sys/class /uio/uio*/maps/map*/addr /sys/class/uio/uio*/maps/map*/size /sys/class/uio/uio*/ device/driver 2>&1
+===UIO===
+crw------- 1 root root 245, 0 Jan  2 09:10 /dev/uio0
+lrwxrwxrwx 1 root root      0 Jan  2 09:10 /sys/class/uio/uio0/device/driver -> ../../../bus/platform/drivers/uio_pdrv_genirq
+-r--r--r-- 1 root root   4096 Jan  2 09:10 /sys/class/uio/uio0/maps/map0/addr
+-r--r--r-- 1 root root   4096 Jan  2 09:10 /sys/class/uio/uio0/maps/map0/size
+-r--r--r-- 1 root root   4096 Jan  2 09:10 /sys/class/uio/uio0/name
+root@zynq:~# echo ===UIO_DRIVERS===; for f in /sys/class/uio/uio*/device/driver;  do [ -e "$f" ] && readlink "$f"; done
+===UIO_DRIVERS===
+../../../bus/platform/drivers/uio_pdrv_genirq
+root@zynq:~# echo ===INTERRUPTS===; cat /proc/interrupts
+===INTERRUPTS===
+           CPU0       CPU1       
+ 16:          1          0     GIC-0  27 Edge      gt
+ 17:          0          0     GIC-0  43 Level     ttc_clockevent
+ 18:       1188       1099     GIC-0  29 Edge      twd
+ 21:         43          0     GIC-0  39 Level     f8007100.adc
+ 23:          0          0     GIC-0  57 Level     cdns-i2c
+ 24:          0          0     GIC-0  80 Level     cdns-i2c
+ 26:          0          0     GIC-0  35 Level     f800c000.ocmc
+ 27:        283          0     GIC-0  82 Level     xuartps
+ 28:          4          0     GIC-0  51 Level     e000d000.spi
+ 29:          0          0     GIC-0  54 Level     eth0
+ 30:       4830          0     GIC-0  56 Level     mmc0
+ 31:        875          0     GIC-0  79 Level     mmc1
+ 32:          0          0     GIC-0  45 Level     f8003000.dmac
+ 33:          0          0     GIC-0  46 Level     f8003000.dmac
+ 34:          0          0     GIC-0  47 Level     f8003000.dmac
+ 35:          0          0     GIC-0  48 Level     f8003000.dmac
+ 36:          0          0     GIC-0  49 Level     f8003000.dmac
+ 37:          0          0     GIC-0  72 Level     f8003000.dmac
+ 38:          0          0     GIC-0  73 Level     f8003000.dmac
+ 39:          0          0     GIC-0  74 Level     f8003000.dmac
+ 40:          0          0     GIC-0  75 Level     f8003000.dmac
+ 41:          0          0     GIC-0  40 Level     f8007000.devcfg
+ 47:       1269          0     GIC-0  53 Level     e0002000.usb
+ 48:          0          0     GIC-0  41 Edge      f8005000.watchdog
+ 49:          0          0     GIC-0  61 Level     uio
+IPI1:          0          0  Timer broadcast interrupts
+IPI2:       2447       3468  Rescheduling interrupts
+IPI3:         19         47  Function call interrupts
+IPI4:          0          0  CPU stop interrupts
+IPI5:          0          0  IRQ work interrupts
+IPI6:          0          0  completion interrupts
+Err:          0
+root@zynq:~# echo ===RESERVED===; find /proc/device-tree/reserved-memory -type f  2>/dev/null | grep -E '/(reg|no-map|status)$' | while IFS= read -r f; do echo " $f"; od -An -tx1 "$f"; done
+===RESERVED===
+/proc/device-tree/reserved-memory/c1_dma_pool@12000000/no-map
+/proc/device-tree/reserved-memory/c1_dma_pool@12000000/reg
+ 12 00 00 00 01 00 00 00
+root@zynq:~# echo ===FDT_HASH===; wc -c /sys/firmware/fdt; sha256sum /sys/firmwa re/fdt
+===FDT_HASH===
+16384 /sys/firmware/fdt
+23b3e3e220334e00f9a6ef1335d11b9563368f8d30013eec5cc4b7105369f893  /sys/firmware/fdt
+root@zynq:~# echo ===DEVCFG===; ls -l /dev/xdevcfg /dev/fpga* 2>&1
+===DEVCFG===
+ls: cannot access /dev/fpga*: No such file or directory
+crw------- 1 root root 246, 0 Jan  2 09:10 /dev/xdevcfg
+root@zynq:~# echo ===ASSET_DIRS===; ls -la /home /opt /root 2>&1
+===ASSET_DIRS===
+/home:
+total 8
+drwxr-xr-x  2 root root 4096 Jul 17  2017 .
+drwxr-xr-x 24 root root 4096 Jan  2 09:10 ..
+
+/opt:
+total 8
+drwxr-xr-x  2 root root 4096 Dec  7  2017 .
+drwxr-xr-x 24 root root 4096 Jan  2 09:10 ..
+
+/root:
+total 52
+drwx------  8 root root  4096 Jan  2 08:31 .
+drwxr-xr-x 24 root root  4096 Jan  2 09:10 ..
+-rw-------  1 root root 11432 Jan  2 09:10 .bash_history
+-rw-r--r--  1 root root   570 Jan 31  2010 .bashrc
+drwx------  4 root root  4096 Jan  1 08:00 .cache
+drwx------  5 root root  4096 Jan  1 08:00 .config
+drwx------  3 root root  4096 Jan  1 08:00 .dbus
+drwxr-xr-x  2 root root  4096 Jan  1 08:00 Desktop
+drwx------  3 root root  4096 Jan  2 08:31 .gconf
+-rw-------  1 root root     0 Jan  1 08:00 .ICEauthority
+drwxr-xr-x  3 root root  4096 Jan  1 08:00 .local
+-rw-r--r--  1 root root   140 Nov 20  2007 .profile
+root@zynq:~# printf '\nAX7021_C1_NOMAP_1793439768END__\n'
+
+AX7021_C1_NOMAP_1793439768END__
+root@zynq:~# 

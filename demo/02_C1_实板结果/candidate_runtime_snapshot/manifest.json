@@ -1,0 +1,35 @@
+{
+  "purpose": "Single RAM-only C1 DTB probe boot; failure evidence retained.",
+  "status": "candidate_boot_and_readonly_capture_passed",
+  "failure": "read-only candidate state capture did not complete",
+  "candidate_dtb": "F:\\FPGA\\offline_research\\experiments\\data\\v1031\\merged_c1_live_fdt_base_v1_20261031\\merged_c1_live_fdt_ready.dtb",
+  "candidate_dtb_sha256": "267a80a10a697c47536e2883bf860cb11cc1688bcc74eabaf5c05ba7d8dc1809",
+  "events": [
+    "confirmed existing root shell",
+    "stopped U-Boot autoboot",
+    "run cp_kernel2ram reported expected FIT size",
+    "YMODEM candidate FDT staged to volatile DDR at 0x11000000",
+    "candidate boot result marker: b'zynq login:\\\\s*$'",
+    "root shell reached"
+  ],
+  "sd_or_flash_boot_file_written": false,
+  "raw_rx_bytes": 31461,
+  "capture_interpretation": "The board snapshot command completed and its output is present in uart_rx.raw. The runner reported failure only because its marker template omitted leading underscores after substitution; the shell marker printed as AX7021_C1_NOMAP_<timestamp>END__.",
+  "runtime_gate_evidence": {
+    "system_ram_before_pool": "0x00000000-0x11ffffff",
+    "system_ram_after_pool": "0x13000000-0x3fffffff",
+    "reserved_pool": "0x12000000-0x12ffffff",
+    "reserved_pool_no_map": true,
+    "uio_device": "/dev/uio0",
+    "uio_driver": "uio_pdrv_genirq",
+    "irq": "61 -> uio; count=0",
+    "runtime_fdt_bytes": 16384,
+    "runtime_fdt_sha256": "23b3e3e220334e00f9a6ef1335d11b9563368f8d30013eec5cc4b7105369f893"
+  },
+  "candidate_linux_active": true,
+  "fpga_configuration_performed": false,
+  "dma_performed": false,
+  "snapshot_path": "F:\\FPGA\\offline_research\\experiments\\data\\v1031\\c1_nomap_probe_boot_20261031_v1\\candidate_snapshot.txt",
+  "snapshot_sha256": "9a911e881d1debc863c2510b99e3220565848b25fac2c49e11045dae84fc6651",
+  "raw_rx_sha256": "d2492e9e036fcd1a929b81c7d6f299c2b348be7c60a213c085cac143a39df504"
+}

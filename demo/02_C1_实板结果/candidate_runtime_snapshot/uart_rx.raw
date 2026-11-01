@@ -1,0 +1,641 @@
+
+root@zynq:~# reboot
+[[32m  OK  [0m] Removed slice system-systemd\x2dfsck.slice.
+[[32m  OK  [0m] Stopped target RPC Port Mapper.
+         Stopping User Manager for UID 0...
+         Stopping Authenticate and Authorize Users to Run Privileged Tasks...
+[[32m  OK  [0m] Stopped target Graphical Interface.
+[[32m  OK  [0m] Stopped target Multi-User System.
+         Stopping Network Manager...
+         Stopping OpenBSD Secure Shell server...
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+         Stopping Regular background program processing daemon...
+[[32m  OK  [0m] Stopped target Login Prompts.
+         Stopping Getty on tty1...
+         Stopping Serial Getty on ttyPS0...
+         Stopping LSB: Start NTP daemon...
+         Stopping LSB: Brings up/down network automatically...
+         Stopping D-Bus System Message Bus...
+         Stopping System Logging Service...
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[[32m  OK  [0m] Stopped Network Manager.
+[[32m  OK  [0m] Stopped Regular background program processing daemon.
+[[32m  OK  [0m] Stopped D-Bus System Message Bus.
+[[32m  OK  [0m] Stopped System Logging Service.
+[[32m  OK  [0m] Stopped OpenBSD Secure Shell server.
+[[32m  OK  [0m] Stopped Getty on tty1.
+[[32m  OK  [0m] Stopped Serial Getty on ttyPS0.
+[[32m  OK  [0m] Stopped Authenticate and Authorize Users to Run Privileged Tasks.
+[[32m  OK  [0m] Stopped User Manager for UID 0.
+[[32m  OK  [0m] Stopped LSB: Start NTP daemon.
+[[32m  OK  [0m] Stopped LSB: Brings up/down network automatically.
+         Stopping Login Service...
+[[32m  OK  [0m] Removed slice user-0.slice.
+[[32m  OK  [0m] Removed slice system-serial\x2dgetty.slice.
+[[32m  OK  [0m] Removed slice system-getty.slice.
+         Stopping /etc/rc.local Compatibility...
+         Stopping Permit User Sessions...
+[[32m  OK  [0m] Stopped Login Service.
+[[32m  OK  [0m] Stopped Permit User Sessions.
+[[32m  OK  [0m] Stopped target Remote File Systems.
+[[32m  OK  [0m] Stopped target Remote File Systems (Pre).
+[[32m  OK  [0m] Stopped /etc/rc.local Compatibility.
+[[32m  OK  [0m] Stopped target Basic System.
+[[32m  OK  [0m] Stopped target Slices.
+[[32m  OK  [0m] Removed slice User and Session Slice.
+[[32m  OK  [0m] Stopped target Paths.
+[[32m  OK  [0m] Stopped target Timers.
+[[32m  OK  [0m] Stopped target Sockets.
+[[32m  OK  [0m] Closed D-Bus System Message Bus Socket.
+[[32m  OK  [0m] Closed Syslog Socket.
+[[32m  OK  [0m] Stopped target System Initialization.
+         Stopping Restore / save the current clock...
+         Stopping Update UTMP about System Boot/Shutdown...
+[[32m  OK  [0m] Stopped target Encrypted Volumes.
+         Stopping LSB: RPC portmapper replacement...
+[[32m  OK  [0m] Stopped target Swap.
+[[32m  OK  [0m] Stopped Restore / save the current clock.
+[[32m  OK  [0m] Stopped Update UTMP about System Boot/Shutdown.
+[[32m  OK  [0m] Stopped LSB: RPC portmapper replacement.
+[[32m  OK  [0m] Stopped target Network is Online.
+[[32m  OK  [0m] Stopped target Network.
+         Stopping LSB: Raise network interfaces....
+         Stopping Create Volatile Files and Directories...
+[[32m  OK  [0m] Stopped Create Volatile Files and Directories.
+[[32m  OK  [0m] Stopped LSB: Raise network interfaces..
+         Stopping Apply Kernel Variables...
+[[32m  OK  [0m] Stopped Apply Kernel Variables.
+         Stopping Load Kernel Modules...
+[[32m  OK  [0m] Stopped Load Kernel Modules.
+         Stopping Load/Save Random Seed...
+[[32m  OK  [0m] Stopped target Local File Systems.
+         Unmounting /run/user/0...
+         Unmounting /sd...
+         Unmounting /run/rpc_pipefs...
+         Unmounting /boot...
+[[32m  OK  [0m] Stopped Load/Save Random Seed.
+[[32m  OK  [0m] Unmounted /run/user/0.
+[[32m  OK  [0m] Unmounted /sd.
+[[32m  OK  [0m] Unmounted /run/rpc_pipefs.
+[[32m  OK  [0m] Unmounted /boot.
+[[32m  OK  [0m] Reached target Unmount All Filesystems.
+[[32m  OK  [0m] Stopped target Local File Systems (Pre).
+         Stopping Create Static Device Nodes in /dev...
+[[32m  OK  [0m] Stopped Create Static Device Nodes in /dev.
+         Stopping Remount Root and Kernel File Systems...
+[[32m  OK  [0m] Stopped Remount Root and Kernel File Systems.
+[[32m  OK  [0m] Reached target Shutdown.
+watchdog: watchdog0: watchdog did not stop!
+systemd-shutdow: 61 output lines suppressed due to ratelimiting
+systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+systemd-journald[1399]: Received SIGTERM from PID 1 (systemd-shutdow).
+systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+systemd-shutdown[1]: Hardware watchdog 'cdns_wdt watchdog', version 0
+systemd-shutdown[1]: Unmounting file systems.
+systemd-shutdown[1]: Unmounting /sys/kernel/config.
+EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+systemd-shutdown[1]: All filesystems unmounted.
+systemd-shutdown[1]: Deactivating swaps.
+systemd-shutdown[1]: All swaps deactivated.
+systemd-shutdown[1]: Detaching loop devices.
+systemd-shutdown[1]: All loop devices detached.
+Console: switching to colour dummy device 80x30
+reboot: Restarting systemˇ
+
+U-Boot 2017.01 (Dec 27 2019 - 15:55:14 +0800)
+
+Model: Zynq ALINX Development Board
+Board: Xilinx Zynq
+I2C:   ready
+DRAM:  ECC disabled 1 GiB
+MMC:   sdhci_transfer_data: Error detected in status(0x208000)!
+sdhci@e0100000: 0 (SD), sdhci@e0101000: 1 (eMMC)
+SF: Detected w25q256 with page size 256 Bytes, erase size 4 KiB, total 32 MiB
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   ZYNQ GEM: e000b000, phyaddr 1, interface rgmii-id
+eth0: ethernet@e000b000
+U-BOOT for ax_peta
+
+ethernet@e000b000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
+Hit any key to stop autoboot:  4  0 
+Zynq> run cp_kernel2ram
+Device: sdhci@e0100000
+Manufacturer ID: 12
+OEM: 3456
+Name: SDTran Speed: 50000000
+Rd Block Len: 512
+SD version 3.0
+High Capacity: Yes
+Capacity: 14.6 GiB
+Bus Width: 4-bit
+Erase Group Size: 512 Bytes
+reading image.ub
+4059728 bytes read in 249 ms (15.5 MiB/s)
+Zynq>  bootm 0x10000000#conf@2 - 0x11000000
+## Loading kernel from FIT Image at 10000000 ...
+   Using 'conf@2' configuration
+   Verifying Hash Integrity ... OK
+   Trying 'kernel@0' kernel subimage
+     Description:  Linux Kernel
+     Type:         Kernel Image
+     Compression:  uncompressed
+     Data Start:   0x100000d4
+     Data Size:    4036144 Bytes = 3.8 MiB
+     Architecture: ARM
+     OS:           Linux
+     Load Address: 0x00008000
+     Entry Point:  0x00008000
+     Hash algo:    sha1
+     Hash value:   b349abbf0faa15bd9aafb8c61daead56dea46893
+   Verifying Hash Integrity ... sha1+ OK
+## Flattened Device Tree blob at 11000000
+   Booting using the fdt blob at 0x11000000
+   Loading Kernel Image ... OK
+   reserving fdt memory region: addr=7ff7000 size=5000
+   Loading Device Tree to 07ff0000, end 07ff6af6 ... OK
+Unable to update property &gem0:mac-address, err=FDT_ERR_BADPATH
+Unable to update property &gem0:local-mac-address, err=FDT_ERR_BADPATH
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+Booting Linux on physical CPU 0x0
+Linux version 4.9.0-xilinx (alinx@ubuntu) (gcc version 6.2.1 20161016 (Linaro GCC 6.2-2016.11) ) #1 SMP PREEMPT Fri Dec 20 09:27:27 CST 2019
+CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=18c5387d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+OF: fdt:Machine model: Zynq ALINX Development Board
+bootconsole [earlycon0] enabled
+cma: Reserved 16 MiB at 0x3f000000
+Memory policy: Data cache writealloc
+percpu: Embedded 14 pages/cpu @ef7d0000 s25932 r8192 d23220 u57344
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 256512
+Kernel command line: console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait uio_pdrv_genirq.of_id=generic-uio
+PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 996560K/1032192K available (6144K kernel code, 213K rwdata, 1532K rodata, 1024K init, 238K bss, 19248K reserved, 16384K cma-reserved, 245760K highmem)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xf0800000 - 0xff800000   ( 240 MB)
+    lowmem  : 0xc0000000 - 0xf0000000   ( 768 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .text : 0xc0008000 - 0xc0700000   (7136 kB)
+      .init : 0xc0900000 - 0xc0a00000   (1024 kB)
+      .data : 0xc0a00000 - 0xc0a35540   ( 214 kB)
+       .bss : 0xc0a35540 - 0xc0a70dd4   ( 239 kB)
+Preemptible hierarchical RCU implementation.
+	Build-time adjustment of leaf fanout to 32.
+	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=2
+NR_IRQS:16 nr_irqs:16 16
+efuse mapped to f0802000
+slcr mapped to f0804000
+L2C: platform modifies aux control register: 0x72360000 -> 0x72760000
+L2C: DT/platform modifies aux control register: 0x72360000 -> 0x72760000
+L2C-310 erratum 769419 enabled
+L2C-310 enabling early BRESP for Cortex-A9
+L2C-310 full line of zeros enabled for Cortex-A9
+L2C-310 ID prefetch enabled, offset 1 lines
+L2C-310 dynamic clock gating enabled, standby mode enabled
+L2C-310 cache controller enabled, 8 ways, 512 kB
+L2C-310: CACHE_ID 0x410000c8, AUX_CTRL 0x76760001
+zynq_clock_init: clkc starts at f0804100
+Zynq clock init
+sched_clock: 64 bits at 383MHz, resolution 2ns, wraps every 4398046511103ns
+clocksource: arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x58688d738d, max_idle_ns: 440795214563 ns
+Switching to timer-based delay loop, resolution 2ns
+clocksource: ttc_clocksource: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 467424388 ns
+timer #0 at f080c000, irq=17
+Console: colour dummy device 80x30
+Calibrating delay loop (skipped), value calculated using timer frequency.. 766.66 BogoMIPS (lpj=3833333)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+CPU: Testing write buffer coherency: ok
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x100000 - 0x100058
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Brought up 2 CPUs
+SMP: Total of 2 processors activated (1533.33 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor menu
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+zynq-ocm f800c000.ocmc: ZYNQ OCM pool: 256 KiB @ 0xf0880000
+zynq-pinctrl 700.pinctrl: zynq pinctrl initialized
+e0001000.serial: ttyPS0 at MMIO 0xe0001000 (irq = 27, base_baud = 6249999) is a xuartps
+†¨ÀkΩ±ïÅ[ttyPS0] enabled
+console [ttyPS0] enabled
+bootconsole [earlycon0] disabled
+bootconsole [earlycon0] disabled
+vgaarb: loaded
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+media: Linux media interface: v0.10
+Linux video capture interface: v2.00
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+EDAC MC: Ver: 3.0.0
+FPGA manager framework
+fpga-region fpga-full: FPGA Region probed
+Advanced Linux Sound Architecture Driver Initialized.
+clocksource: Switched to clocksource arm_global_timer
+NET: Registered protocol family 2
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+UDP hash table entries: 512 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+futex hash table entries: 512 (order: 3, 32768 bytes)
+workingset: timestamp_bits=30 max_order=18 bucket_order=0
+jffs2: version 2.2. (NAND) (SUMMARY)  ¬© 2001-2006 Red Hat, Inc.
+bounce: pool size: 64 pages
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+dma-pl330 f8003000.dmac: Loaded driver for PL330 DMAC-241330
+dma-pl330 f8003000.dmac: 	DBUFF-128x8bytes Num_Chans-8 Num_Peri-4 Num_Events-16
+xdevcfg f8007000.devcfg: ioremap 0xf8007000 to f086d000
+[drm] Initialized
+brd: module loaded
+loop: module loaded
+m25p80 spi0.0: found w25q256, expected m25p80
+m25p80 spi0.0: failed to read ear reg
+m25p80 spi0.0: w25q256 (32768 Kbytes)
+4 ofpart partitions found on MTD device spi0.0
+Creating 4 MTD partitions on "spi0.0":
+0x000000000000-0x000000500000 : "boot"
+0x000000500000-0x000000520000 : "bootenv"
+0x000000520000-0x000000fa0000 : "kernel"
+0x000000fa0000-0x000002000000 : "spare"
+libphy: Fixed MDIO Bus: probed
+CAN device driver interface
+libphy: MACB_mii_bus: probed
+macb e000b000.ethernet eth0: Cadence GEM rev 0x00020118 at 0xe000b000 irq 29 (00:0a:35:00:1e:53)
+Micrel KSZ9031 Gigabit PHY e000b000.etherne:01: attached PHY driver [Micrel KSZ9031 Gigabit PHY] (mii_bus:phy_addr=e000b000.etherne:01, irq=-1)
+e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci-pci: EHCI PCI platform driver
+usbcore: registered new interface driver usb-storage
+e0002000.usb supply vbus not found, using dummy regulator
+ULPI transceiver vendor/product ID 0x0424/0x0007
+Found SMSC USB3320 ULPI transceiver.
+ULPI integrity check: passed.
+ci_hdrc ci_hdrc.0: EHCI Host Controller
+ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+mousedev: PS/2 mouse device common for all mice
+i2c /dev entries driver
+cdns-i2c e0004000.i2c: 100 kHz mmio e0004000 irq 23
+cdns-i2c e0005000.i2c: 400 kHz mmio e0005000 irq 24
+uvcvideo: Unable to create debugfs directory
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (1.1.1)
+cdns-wdt f8005000.watchdog: Xilinx Watchdog Timer at f0997000 with timeout 10s
+EDAC MC: ECC not enabled
+Xilinx Zynq CpuIdle Driver started
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci-pltfm: SDHCI platform and OF driver helper
+mmc0: SDHCI controller on e0100000.sdhci [e0100000.sdhci] using ADMA
+mmc0: new high speed SDHC card at address 0001
+mmcblk0: mmc0:0001 SD 14.6 GiB 
+ mmcblk0: p1 p2
+mmc1: SDHCI controller on e0101000.sdhci [e0101000.sdhci] using ADMA
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+NET: Registered protocol family 10
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered protocol family 17
+can: controller area network core (rev 20120528 abi 9)
+NET: Registered protocol family 29
+can: raw protocol (rev 20120528)
+can: broadcast manager protocol (rev 20161123 t)
+can: netlink gateway (rev 20130117) max_hops=1
+Registering SWP/SWPB emulation handler
+hctosys: unable to open rtc device (rtc0)
+of_cfs_init
+of_cfs_init: OK
+ALSA device list:
+  No soundcards found.
+EXT4-fs (mmcblk0p2): couldn't mount as ext3 due to feature incompatibilities
+mmc1: new high speed MMC card at address 0001
+mmcblk1: mmc1:0001 Q2J55L 7.09 GiB 
+mmcblk1boot0: mmc1:0001 Q2J55L partition 1 16.0 MiB
+mmcblk1boot1: mmc1:0001 Q2J55L partition 2 16.0 MiB
+mmcblk1rpmb: mmc1:0001 Q2J55L partition 3 4.00 MiB
+EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) on device 179:2.
+devtmpfs: mounted
+Freeing unused kernel memory: 1024K (c0900000 - c0a00000)
+usb 1-1: new high-speed USB device number 2 using ci_hdrc
+random: fast init done
+systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+systemd[1]: Detected architecture 'arm'.
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 4 ports detected
+
+Welcome to [1mDebian GNU/Linux 8 (jessie)[0m!
+
+systemd[1]: Failed to insert module 'autofs4'
+systemd[1]: Set hostname to <zynq>.
+usb 1-1.4: new high-speed USB device number 3 using ci_hdrc
+usb-storage 1-1.4:1.0: USB Mass Storage device detected
+scsi host0: usb-storage 1-1.4:1.0
+systemd[1]: Cannot add dependency job for unit display-manager.service, ignoring: Unit display-manager.service failed to load: No such file or directory.
+systemd[1]: Expecting device dev-ttyPS0.device...
+         Expecting device dev-ttyPS0.device...
+systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+systemd[1]: Starting Remote File Systems (Pre).
+[[32m  OK  [0m] Reached target Remote File Systems (Pre).
+systemd[1]: Reached target Remote File Systems (Pre).
+[[32m  OK  [0m] Reached target Encrypted Volumes.
+[[32m  OK  [0m] Reached target Paths.
+[[32m  OK  [0m] Reached target Swap.
+         Expecting device dev-mmcblk0p1.device...
+[[32m  OK  [0m] Created slice Root Slice.
+[[32m  OK  [0m] Created slice User and Session Slice.
+[[32m  OK  [0m] Listening on Delayed Shutdown Socket.
+[[32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[[32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[[32m  OK  [0m] Listening on udev Control Socket.
+[[32m  OK  [0m] Listening on udev Kernel Socket.
+[[32m  OK  [0m] Listening on Journal Socket.
+[[32m  OK  [0m] Created slice System Slice.
+[[32m  OK  [0m] Created slice system-systemd\x2dfsck.slice.
+[[32m  OK  [0m] Created slice system-getty.slice.
+[[32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+         Starting Increase datagram queue length...
+         Starting Restore / save the current clock...
+         Starting udev Coldplug all Devices...
+         Starting Load Kernel Modules...
+         Starting Create Static Device Nodes in /dev...
+[[32m  OK  [0m] Reached target Slices.
+[[32m  OK  [0m] Started Increase datagram queue length.
+[[32m  OK  [0m] Started Restore / save the current clock.
+scsi 0:0:0:0: Direct-Access     VendorCo ProductCode      2.00 PQ: 0 ANSI: 4
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+sd 0:0:0:0: [sda] 30720000 512-byte logical blocks: (15.7 GB/14.6 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+[[32m  OK  [0m] Started Load Kernel Modules.
+sd 0:0:0:0: [sda] No Caching mode page found
+sd 0:0:0:0: [sda] Assuming drive cache: write through
+ sda: sda1 sda2
+[[32m  OK  [0m] Started Create Static Device Nodes in /dev.
+sd 0:0:0:0: [sda] Attached SCSI removable disk
+[[32m  OK  [0m] Started udev Coldplug all Devices.
+         Starting udev Kernel Device Manager...
+         Mounting Configuration File System...
+         Starting Apply Kernel Variables...
+systemd-udevd[1334]: starting version 215
+[[32m  OK  [0m] Listening on Syslog Socket.
+         Starting Journal Service...
+[[32m  OK  [0m] Started Journal Service.
+[[32m  OK  [0m] Mounted Configuration File System.
+[[32m  OK  [0m] Started udev Kernel Device Manager.
+[[32m  OK  [0m] Started Apply Kernel Variables.
+         Starting Copy rules generated while the root was ro...
+         Starting LSB: Set preliminary keymap...
+[[32m  OK  [0m] Started Copy rules generated while the root was ro.
+[[32m  OK  [0m] Started LSB: Set preliminary keymap.
+         Starting Remount Root and Kernel File Systems...
+EXT4-fs (mmcblk0p2): re-mounted. Opts: errors=remount-ro
+[[32m  OK  [0m] Started Remount Root and Kernel File Systems.
+         Starting Load/Save Random Seed...
+[[32m  OK  [0m] Reached target Local File Systems (Pre).
+[[32m  OK  [0m] Started Load/Save Random Seed.
+[[32m  OK  [0m] Found device /dev/ttyPS0.
+[[32m  OK  [0m] Found device /dev/mmcblk0p1.
+         Starting File System Check on /dev/mmcblk0p1...
+systemd-fsck[1384]: fsck.fat 3.0.27 (2014-11-12)
+systemd-fsck[1384]: /dev/mmcblk0p1: 7 files, 1735/92231 clusters
+[[32m  OK  [0m] Started File System Check on /dev/mmcblk0p1.
+         Mounting /boot...
+[[32m  OK  [0m] Mounted /boot.
+[[32m  OK  [0m] Reached target Local File Systems.
+         Starting Create Volatile Files and Directories...
+         Starting LSB: Raise network interfaces....
+[[32m  OK  [0m] Reached target Remote File Systems.
+         Starting Trigger Flushing of Journal to Persistent Storage...
+         Starting LSB: Set console font and keymap...
+[[32m  OK  [0m] Started Create Volatile Files and Directories.
+[[32m  OK  [0m] Started LSB: Set console font and keymap.
+         Starting Update UTMP about System Boot/Shutdown...
+systemd-journald[1339]: Received request to flush runtime journal from PID 1
+[[32m  OK  [0m] Started Trigger Flushing of Journal to Persistent Storage.
+[[32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[32m  OK  [0m] Started LSB: Raise network interfaces..
+[[32m  OK  [0m] Reached target Network.
+[[32m  OK  [0m] Reached target Network is Online.
+         Starting LSB: RPC portmapper replacement...
+[[32m  OK  [0m] Started LSB: RPC portmapper replacement.
+[[32m  OK  [0m] Reached target RPC Port Mapper.
+         Starting LSB: NFS support files common to client and server...
+[[1;31mFAILED[0m] Failed to start LSB: NFS support files common to client and server.
+See 'systemctl status nfs-common.service' for details.
+[[32m  OK  [0m] Reached target System Initialization.
+[[32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[[32m  OK  [0m] Reached target Sockets.
+[[32m  OK  [0m] Reached target Timers.
+[[32m  OK  [0m] Reached target Basic System.
+         Starting Network Manager...
+         Starting OpenBSD Secure Shell server...
+         Starting Regular background program processing daemon...
+[[32m  OK  [0m] Started Regular background program processing daemon.
+         Starting /etc/rc.local Compatibility...
+         Starting Login Service...
+         Starting LSB: Start NTP daemon...
+         Starting LSB: Brings up/down network automatically...
+         Starting D-Bus System Message Bus...
+[[32m  OK  [0m] Started D-Bus System Message Bus.
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+         Starting System Logging Service...
+         Starting Permit User Sessions...
+[[32m  OK  [0m] Started OpenBSD Secure Shell server.
+[[32m  OK  [0m] Started /etc/rc.local Compatibility.
+[[32m  OK  [0m] Started LSB: Start NTP daemon.
+[[32m  OK  [0m] Started LSB: Brings up/down network automatically.
+[[32m  OK  [0m] Started Permit User Sessions.
+         Starting Getty on tty1...
+[[32m  OK  [0m] Started Getty on tty1.
+         Starting Serial Getty on ttyPS0...
+[[32m  OK  [0m] Started Serial Getty on ttyPS0.
+[[32m  OK  [0m] Reached target Login Prompts.
+[[32m  OK  [0m] Started Login Service.
+[[32m  OK  [0m] Started System Logging Service.
+         Starting Authenticate and Authorize Users to Run Privileged Tasks...
+[[32m  OK  [0m] Started Authenticate and Authorize Users to Run Privileged Tasks.
+[[32m  OK  [0m] Started Network Manager.
+[[32m  OK  [0m] Reached target Multi-User System.
+[[32m  OK  [0m] Reached target Graphical Interface.
+         Starting Update UTMP about System Runlevel Changes...
+[[32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
+
+Debian GNU/Linux 8 zynq ttyPS0
+
+zynq login: root
+Password: 
+Last login: Fri Jan  2 08:33:29 CST 1970 on ttyPS0
+Linux zynq 4.9.0-xilinx #1 SMP PREEMPT Fri Dec 20 09:27:27 CST 2019 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+root@zynq:~# printf '\nAX7021_C1_NOMAP_1793439768BEGIN__\n'
+
+AX7021_C1_NOMAP_1793439768BEGIN__
+; cat /proc/interrupts
+echo ===RESERVED===; find /proc/device-tree/reserved-memory -type f 2>/dev/null | grep -E '/(reg|no-map|status)$' | while IFS= read -r f; do echo "$f"; od -An -tx1 "$f"; done
+echo ===FDT_HASH===; wc -c /sys/firmware/fdt; sha256sum /sys/firmware/fdt
+echo ===DEVCFG===; ls -l /dev/xdevcfg /dev/fpga* 2>&1
+echo ===ASSET_DIRS===; ls -la /home /opt /root 2>&1
+printf '\nAX7021_C1_NOMAP_1793439768END__\n'
+root@zynq:~# echo ===KERNEL===; uname -a
+===KERNEL===
+Linux zynq 4.9.0-xilinx #1 SMP PREEMPT Fri Dec 20 09:27:27 CST 2019 armv7l GNU/Linux
+root@zynq:~# echo ===CMDLINE===; cat /proc/cmdline
+===CMDLINE===
+console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait uio_pdrv_genirq.of_id=generic-uio
+root@zynq:~# echo ===IOMEM===; cat /proc/iomem
+===IOMEM===
+00000000-11ffffff : System RAM
+  00008000-008fffff : Kernel code
+  00a00000-00a70dd3 : Kernel data
+13000000-3fffffff : System RAM
+e0001000-e0001fff : xuartps
+e0002000-e0002fff : /amba/usb@e0002000
+  e0002000-e0002fff : /amba/usb@e0002000
+e0004000-e0004fff : /amba/i2c@e0004000
+e0005000-e0005fff : /amba/i2c@e0005000
+e000a000-e000afff : /amba/gpio@e000a000
+e000b000-e000bfff : /amba/ethernet@e000b000
+e000d000-e000dfff : /amba/spi@e000d000
+e0100000-e0100fff : /amba/sdhci@e0100000
+e0101000-e0101fff : /amba/sdhci@e0101000
+f8003000-f8003fff : /amba/dmac@f8003000
+  f8003000-f8003fff : /amba/dmac@f8003000
+f8005000-f8005fff : /amba/watchdog@f8005000
+f8007000-f80070ff : /amba/devcfg@f8007000
+f8007100-f800711f : /amba/adc@f8007100
+f800c000-f800cfff : /amba/ocmc@f800c000
+fffc0000-ffffffff : f800c000.ocmc
+root@zynq:~# echo ===UIO===; ls -l /dev/uio* /sys/class/uio/uio*/name /sys/class /uio/uio*/maps/map*/addr /sys/class/uio/uio*/maps/map*/size /sys/class/uio/uio*/ device/driver 2>&1
+===UIO===
+crw------- 1 root root 245, 0 Jan  2 09:10 /dev/uio0
+lrwxrwxrwx 1 root root      0 Jan  2 09:10 /sys/class/uio/uio0/device/driver -> ../../../bus/platform/drivers/uio_pdrv_genirq
+-r--r--r-- 1 root root   4096 Jan  2 09:10 /sys/class/uio/uio0/maps/map0/addr
+-r--r--r-- 1 root root   4096 Jan  2 09:10 /sys/class/uio/uio0/maps/map0/size
+-r--r--r-- 1 root root   4096 Jan  2 09:10 /sys/class/uio/uio0/name
+root@zynq:~# echo ===UIO_DRIVERS===; for f in /sys/class/uio/uio*/device/driver;  do [ -e "$f" ] && readlink "$f"; done
+===UIO_DRIVERS===
+../../../bus/platform/drivers/uio_pdrv_genirq
+root@zynq:~# echo ===INTERRUPTS===; cat /proc/interrupts
+===INTERRUPTS===
+           CPU0       CPU1       
+ 16:          1          0     GIC-0  27 Edge      gt
+ 17:          0          0     GIC-0  43 Level     ttc_clockevent
+ 18:       1188       1099     GIC-0  29 Edge      twd
+ 21:         43          0     GIC-0  39 Level     f8007100.adc
+ 23:          0          0     GIC-0  57 Level     cdns-i2c
+ 24:          0          0     GIC-0  80 Level     cdns-i2c
+ 26:          0          0     GIC-0  35 Level     f800c000.ocmc
+ 27:        283          0     GIC-0  82 Level     xuartps
+ 28:          4          0     GIC-0  51 Level     e000d000.spi
+ 29:          0          0     GIC-0  54 Level     eth0
+ 30:       4830          0     GIC-0  56 Level     mmc0
+ 31:        875          0     GIC-0  79 Level     mmc1
+ 32:          0          0     GIC-0  45 Level     f8003000.dmac
+ 33:          0          0     GIC-0  46 Level     f8003000.dmac
+ 34:          0          0     GIC-0  47 Level     f8003000.dmac
+ 35:          0          0     GIC-0  48 Level     f8003000.dmac
+ 36:          0          0     GIC-0  49 Level     f8003000.dmac
+ 37:          0          0     GIC-0  72 Level     f8003000.dmac
+ 38:          0          0     GIC-0  73 Level     f8003000.dmac
+ 39:          0          0     GIC-0  74 Level     f8003000.dmac
+ 40:          0          0     GIC-0  75 Level     f8003000.dmac
+ 41:          0          0     GIC-0  40 Level     f8007000.devcfg
+ 47:       1269          0     GIC-0  53 Level     e0002000.usb
+ 48:          0          0     GIC-0  41 Edge      f8005000.watchdog
+ 49:          0          0     GIC-0  61 Level     uio
+IPI1:          0          0  Timer broadcast interrupts
+IPI2:       2447       3468  Rescheduling interrupts
+IPI3:         19         47  Function call interrupts
+IPI4:          0          0  CPU stop interrupts
+IPI5:          0          0  IRQ work interrupts
+IPI6:          0          0  completion interrupts
+Err:          0
+root@zynq:~# echo ===RESERVED===; find /proc/device-tree/reserved-memory -type f  2>/dev/null | grep -E '/(reg|no-map|status)$' | while IFS= read -r f; do echo " $f"; od -An -tx1 "$f"; done
+===RESERVED===
+/proc/device-tree/reserved-memory/c1_dma_pool@12000000/no-map
+/proc/device-tree/reserved-memory/c1_dma_pool@12000000/reg
+ 12 00 00 00 01 00 00 00
+root@zynq:~# echo ===FDT_HASH===; wc -c /sys/firmware/fdt; sha256sum /sys/firmwa re/fdt
+===FDT_HASH===
+16384 /sys/firmware/fdt
+23b3e3e220334e00f9a6ef1335d11b9563368f8d30013eec5cc4b7105369f893  /sys/firmware/fdt
+root@zynq:~# echo ===DEVCFG===; ls -l /dev/xdevcfg /dev/fpga* 2>&1
+===DEVCFG===
+ls: cannot access /dev/fpga*: No such file or directory
+crw------- 1 root root 246, 0 Jan  2 09:10 /dev/xdevcfg
+root@zynq:~# echo ===ASSET_DIRS===; ls -la /home /opt /root 2>&1
+===ASSET_DIRS===
+/home:
+total 8
+drwxr-xr-x  2 root root 4096 Jul 17  2017 .
+drwxr-xr-x 24 root root 4096 Jan  2 09:10 ..
+
+/opt:
+total 8
+drwxr-xr-x  2 root root 4096 Dec  7  2017 .
+drwxr-xr-x 24 root root 4096 Jan  2 09:10 ..
+
+/root:
+total 52
+drwx------  8 root root  4096 Jan  2 08:31 .
+drwxr-xr-x 24 root root  4096 Jan  2 09:10 ..
+-rw-------  1 root root 11432 Jan  2 09:10 .bash_history
+-rw-r--r--  1 root root   570 Jan 31  2010 .bashrc
+drwx------  4 root root  4096 Jan  1 08:00 .cache
+drwx------  5 root root  4096 Jan  1 08:00 .config
+drwx------  3 root root  4096 Jan  1 08:00 .dbus
+drwxr-xr-x  2 root root  4096 Jan  1 08:00 Desktop
+drwx------  3 root root  4096 Jan  2 08:31 .gconf
+-rw-------  1 root root     0 Jan  1 08:00 .ICEauthority
+drwxr-xr-x  3 root root  4096 Jan  1 08:00 .local
+-rw-r--r--  1 root root   140 Nov 20  2007 .profile
+root@zynq:~# printf '\nAX7021_C1_NOMAP_1793439768END__\n'
+
+AX7021_C1_NOMAP_1793439768END__
+root@zynq:~# 

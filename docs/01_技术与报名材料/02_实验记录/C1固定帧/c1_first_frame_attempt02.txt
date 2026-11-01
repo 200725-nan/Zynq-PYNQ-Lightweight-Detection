@@ -1,0 +1,19 @@
+root@zynq:~# 156-    size = int(read_text("maps/map0/size"), 0)
+157-    event_count = int(read_text("event"), 0)
+158:    if name not in ("c1-s2mm-irq", "uio"):
+159-        raise ValueError("unexpected UIO name: " + name)
+160-    if address != VDMA_BASE:
+__C1_RUNNER_RC=1
+AX7021_C1_SOURCE_RUN_FAIL: /lib/arm-linux-gnueabihf/libc.so.6: version `GLIBC_2.28' not found (required by /tmp/c1_ort/onnxruntime-linux-arm32-1.14.1/lib/libonnxruntime.so.1.14.1)
+__RESULT_JSONL__
+cat: /tmp/c1_result.jsonl: No such file or directory
+__FILES__
+ls: cannot access /tmp/c1_result.jsonl: No such file or directory
+/tmp/c1_capture:
+total 0
+__HASHES__
+9a472e6dbbb6d7c51ca0e4bdef578a85195a7660967d351dda569bb2250e02af  /tmp/c1_delta/input_rgb640x480/000000005001.rgb
+32a909f74381cd06e989bf8ec9241b1c85479d7ec9d3ba17f8588bfbbc7e4778  /tmp/c1_delta/golden_q06_rgb300/000000005001.rgb
+sha256sum: /tmp/c1_capture/000000005001.rgb: No such file or directory
+__GOLDEN_CMP_RC=2
+__C1_FRAME_END_20261031_02__

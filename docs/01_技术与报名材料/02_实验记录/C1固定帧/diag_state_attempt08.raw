@@ -1,0 +1,13 @@
+root@zynq:/tmp/c1_delta/software# __C1_DIAG_STATE__
+-rw-r--r-- 1 root root 26010 Jan  2 09:46 /tmp/c1_delta/software/ax7021_c1_source_stage_runner_diag.py
+-rw-r--r-- 1 root root     0 Jan  2 09:47 /tmp/c1_result_diag.jsonl
+204:    print(101); sys.stdout.flush()
+272:        print(102); sys.stdout.flush()
+315:            print(103); sys.stdout.flush()
+336:                    print(104); sys.stdout.flush()
+338:                    print(105); sys.stdout.flush()
+345:                    print(106); sys.stdout.flush()
+348:                    print(107); sys.stdout.flush()
+350:                    print(108); sys.stdout.flush()
+362:                    print(109); sys.stdout.flush()
+__C1_DIAG_STATE_END__

@@ -1,0 +1,55 @@
+root@zynq:~# root@zynq:~# root@zynq:~# tar: software/ax7021_c1_source_stage_runner.py: time stamp 2026-10-31 16:51:59.7206097 is 1793344124.737861323 s in the future
+tar: software/ax7021_c0_source_stage_runner.py: time stamp 2026-10-30 11:29:03.3869872 is 1793238348.401048655 s in the future
+tar: software/ax7021_vdma_python.py: time stamp 2026-10-31 15:12:28.485949 is 1793338153.499450253 s in the future
+tar: runtime/libax7021_vdma_uio.so: time stamp 2026-10-31 09:05:17.530978 is 1793316122.543836976 s in the future
+tar: runtime/libort_ctypes_bridge.so: time stamp 2026-10-31 05:01:13.796002 is 1793301478.803826102 s in the future
+tar: hardware/ax7021_c1_vdma_system.bit: time stamp 2026-10-31 03:45:10.261882 is 1793296915.074732852 s in the future
+tar: hardware/ax7021_c1_vdma_system.xsa: time stamp 2026-10-31 03:45:23.1994107 is 1793296927.999797332 s in the future
+tar: input_rgb640x480/000000005001.rgb: time stamp 2026-10-31 05:01:09.6971278 is 1793301474.447344521 s in the future
+tar: input_rgb640x480/manifest.one_frame.json: time stamp 2026-10-31 18:04:11.7430878 is 1793348456.492651499 s in the future
+tar: golden_q06_rgb300/000000005001.rgb: time stamp 2026-10-31 05:01:09.754714 is 1793301474.496717109 s in the future
+tar: bundle_manifest.json: time stamp 2026-10-31 18:04:11.77578 is 1793348456.517393996 s in the future
+__DELTA_EXTRACT_RC=0
+root@zynq:~# tar: onnxruntime-linux-arm32-1.14.1/lib/libonnxruntime.so: time stamp 2023-05-09 01:00:30 is 1683472634.62527993 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/lib/libonnxruntime.so.1.14.1: time stamp 2023-05-08 19:06:45 is 1683451408.985422686 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/lib: time stamp 2023-05-09 01:00:30 is 1683472633.985112319 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/Privacy.md: time stamp 2023-02-25 14:46:56 is 1677215019.984795527 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/VERSION_NUMBER: time stamp 2023-02-25 14:46:56 is 1677215019.98449754 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include/onnxruntime_session_options_config_keys.h: time stamp 2023-02-25 14:46:56 is 1677215019.983939627 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include/onnxruntime_cxx_inline.h: time stamp 2023-02-25 14:46:56 is 1677215019.98298458 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include/onnxruntime_c_api.h: time stamp 2023-02-25 14:46:56 is 1677215019.97816838 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include/onnxruntime_run_options_config_keys.h: time stamp 2023-02-25 14:46:56 is 1677215019.977770257 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include/provider_options.h: time stamp 2023-02-25 14:46:56 is 1677215019.977493733 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include/onnxruntime_cxx_api.h: time stamp 2023-02-25 14:46:56 is 1677215019.975039506 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include/cpu_provider_factory.h: time stamp 2023-02-25 14:46:56 is 1677215019.974678178 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/include: time stamp 2023-05-09 00:59:33 is 1683472576.97449943 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/GIT_COMMIT_ID: time stamp 2023-02-25 14:46:56 is 1677215019.974259959 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/README.md: time stamp 2023-02-25 14:46:56 is 1677215019.973911884 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/LICENSE: time stamp 2023-02-25 14:46:56 is 1677215019.973630823 s in the future
+tar: onnxruntime-linux-arm32-1.14.1/ThirdPartyNotices.txt: time stamp 2023-02-25 14:46:56 is 1677215019.967967008 s in the future
+tar: onnxruntime-linux-arm32-1.14.1: time stamp 2023-05-09 00:58:25 is 1683472508.967634431 s in the future
+__ORT_EXTRACT_RC=0
+root@zynq:~# random: crng init done
+__LIBC_EXTRACT_RC=0
+root@zynq:~# __STDCPP_EXTRACT_RC=0
+root@zynq:~# __LIBGCC_EXTRACT_RC=0
+root@zynq:~# __UIO_PATCH_RC=0
+root@zynq:~# 9a472e6dbbb6d7c51ca0e4bdef578a85195a7660967d351dda569bb2250e02af  /tmp/c1_delta/input_rgb640x480/000000005001.rgb
+32a909f74381cd06e989bf8ec9241b1c85479d7ec9d3ba17f8588bfbbc7e4778  /tmp/c1_delta/golden_q06_rgb300/000000005001.rgb
+b8fba5e404077d4048d27fcd1667e85e27e192eb9bf51e696c46a3acd7d21058  /mnt/c1usb_ro/AX7021_BOARD_TEST/model/ssd_mobilenet_v1_12.onnx
+root@zynq:~# root@zynq:~# root@zynq:~# ===ORT_LOAD===
+root@zynq:~# ORT_LOAD_OK
+root@zynq:~# __ORT_LOAD_RC=0
+root@zynq:~# > > > > > > > > > Segmentation fault
+__C1_RUNNER_RC=139
+__RESULT_JSONL__
+__FILES__
+-rw-r--r-- 1 root root    0 Jan  2 09:44 /tmp/c1_result.jsonl
+
+/tmp/c1_capture:
+total 0
+__OUTPUT_HASHES__
+sha256sum: /tmp/c1_capture/000000005001.rgb: No such file or directory
+__GOLDEN_CMP_RC=2
+root@zynq:/tmp/c1_delta/software# __C1_FRAME_END_20261031_05__
+root@zynq:/tmp/c1_delta/software# 

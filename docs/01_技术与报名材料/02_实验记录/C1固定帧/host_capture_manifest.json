@@ -1,0 +1,9 @@
+{
+  "captured_utc": "2026-10-31T10:27:46.658049+00:00",
+  "port": "COM6",
+  "baud": 115200,
+  "uart_bytes": 994,
+  "uart_sha256": "94ecc0c7111487550345a3262ee013ec22af605ba6e59730967162c9a0cdb600",
+  "completion_marker_seen": true,
+  "command_scope": "one C1 fixed-frame runner invocation plus output/golden hashes"
+}

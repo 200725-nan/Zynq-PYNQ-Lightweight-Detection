@@ -1,0 +1,8 @@
+{
+  "captured_utc": "2026-10-31T14:51:30.946765+00:00",
+  "uart_bytes": 309,
+  "uart_sha256": "a657998b119e47757cd536fdc4782dda5d99db03df200df857e0dfb53a4ef8b5",
+  "completion_marker_seen": true,
+  "timeout": false,
+  "scope": "Same single-frame diagnostic runner with board-side log capture"
+}

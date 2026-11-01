@@ -1,0 +1,15 @@
+{
+  "frames": [
+    {
+      "frame": "000000005001.rgb",
+      "rgb_sha256": "9a472e6dbbb6d7c51ca0e4bdef578a85195a7660967d351dda569bb2250e02af"
+    }
+  ],
+  "model_sha256": "b8fba5e404077d4048d27fcd1667e85e27e192eb9bf51e696c46a3acd7d21058",
+  "scope": "one-frame C1 view derived without modifying frozen source manifest",
+  "source_format": "RGB888",
+  "source_height": 480,
+  "source_holdout_manifest_sha256": "77f6d12a82aad113fdd21c829208fa0d54473543349b2f284f851ac608c94908",
+  "source_width": 640,
+  "source_manifest_sha256": "1335d9e6407f0a5899946b247d8d388756ec3f8b6646f3462b313a626e938fbd"
+}

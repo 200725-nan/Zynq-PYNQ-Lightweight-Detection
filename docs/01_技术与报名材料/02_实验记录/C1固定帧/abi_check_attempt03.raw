@@ -1,0 +1,30 @@
+root@zynq:/tmp/c1_delta/software# ===COMPAT_RAM===
+ls: cannot access /dev/shm/ax7021_compat: No such file or directory
+ls: cannot access /dev/shm/ax7021_preflight: No such file or directory
+ls: cannot access /tmp/c1_compat: No such file or directory
+find: `/dev/shm/ax7021_compat': No such file or directory
+===BOARD_GLIBC===
+ldd (Debian GLIBC 2.19-18+deb8u10) 2.19
+Copyright (C) 2014 Free Software Foundation, Inc.
+===USB===
+/mnt/c1usb_ro/AX7021_BOARD_TEST:
+total 96
+drwxr-xr-x 2 root root 8192 Oct 30  2026 annotations
+drwxr-xr-x 3 root root 8192 Jan  1  1980 board_results
+drwxr-xr-x 2 root root 8192 Jan  1  1980 C1_DELTA_20261031_V1
+drwxr-xr-x 2 root root 8192 Oct 30  2026 input_ppm
+-rwxr-xr-x 1 root root 1533 Oct 30  2026 manifest.csv
+drwxr-xr-x 2 root root 8192 Oct 30  2026 model
+drwxr-xr-x 4 root root 8192 Oct 30  2026 next_stage_2026-10-30
+drwxr-xr-x 4 root root 8192 Oct 30  2026 quality_eval10
+-rwxr-xr-x 1 root root 1991 Oct 30  2026 README.txt
+drwxr-xr-x 4 root root 8192 Oct 30  2026 reference
+drwxr-xr-x 2 root root 8192 Oct 30  2026 runtime
+drwxr-xr-x 3 root root 8192 Oct 30  2026 runtime_compat
+
+/mnt/c1usb_ro/AX7021_BOARD_TEST/runtime_compat:
+total 16
+drwxr-xr-x 2 root root 8192 Oct 30  2026 debs
+-rwxr-xr-x 1 root root 1353 Oct 30  2026 README.txt
+__C1_ABI_CHECK_END_03__
+root@zynq:/tmp/c1_delta/software# 

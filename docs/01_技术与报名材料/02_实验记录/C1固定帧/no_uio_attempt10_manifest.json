@@ -1,0 +1,7 @@
+{
+  "captured_utc": "2026-10-31T14:53:42.075475+00:00",
+  "uart_bytes": 4418,
+  "uart_sha256": "a728625c8619536fb39c9c47c67c84f806b47a80bca36b57faf8877f8c8b3acd",
+  "completion_marker_seen": true,
+  "scope": "Same single C1 frame through MMIO polling path after UIO wrapper segfault"
+}

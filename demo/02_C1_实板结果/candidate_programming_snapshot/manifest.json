@@ -1,0 +1,32 @@
+{
+  "purpose": "Single RAM-only C1 DTB probe boot to check Linux no-map/UIO before any C1 PL configuration or DMA.",
+  "port": "COM6",
+  "baudrate": 115200,
+  "candidate_dtb": "F:\\FPGA\\offline_research\\experiments\\data\\v1031\\merged_c1_live_fdt_base_v1_20261031\\merged_c1_live_fdt_ready.dtb",
+  "candidate_dtb_bytes": 15095,
+  "candidate_dtb_sha256": "267a80a10a697c47536e2883bf860cb11cc1688bcc74eabaf5c05ba7d8dc1809",
+  "fit_bytes_expected": 4059728,
+  "fit_load_address": "0x10000000",
+  "candidate_fdt_load_address": "0x11000000",
+  "boot_command": "bootm 0x10000000#conf@2 - 0x11000000",
+  "ymodem_result": {
+    "address": 285212672,
+    "baudrate": 115200,
+    "bytes_sent": 15095,
+    "reported_bytes": 15095,
+    "sha256": "267a80a10a697c47536e2883bf860cb11cc1688bcc74eabaf5c05ba7d8dc1809"
+  },
+  "events": [
+    "confirmed U-Boot prompt after C1 BIT configuration",
+    "run cp_kernel2ram reported expected FIT size",
+    "YMODEM candidate FDT staged to volatile DDR at 0x11000000",
+    "candidate boot result marker: b'zynq login:\\\\s*$'",
+    "root shell reached",
+    "captured no-map/UIO/IRQ state from candidate Linux"
+  ],
+  "fpga_configuration_performed": false,
+  "dma_performed": false,
+  "sd_or_flash_boot_file_written": false,
+  "raw_rx_bytes": 24877,
+  "raw_rx_sha256": "e5126bb994ca91e6c3bc130b09c41550699c009e29fbbc95e8a9f655db93920f"
+}

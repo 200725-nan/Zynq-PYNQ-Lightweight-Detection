@@ -1,0 +1,10 @@
+{
+  "scope": "Read-only C1 asset, UIO map and FPGA config device inventory",
+  "captured_utc": "2026-10-31T09:46:35.998565+00:00",
+  "board_file_or_register_writes": false,
+  "fpga_configuration_performed": false,
+  "dma_performed": false,
+  "rx_bytes": 668,
+  "rx_sha256": "eb6182d8bdb035131374decb984f8e2fa1edbace13b511b827e36269b8385e0e",
+  "text": "F:\\FPGA\\offline_research\\experiments\\data\\v1031\\c1_nomap_probe_boot_20261031_v1\\runtime_assets_followup.txt"
+}
